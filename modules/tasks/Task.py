@@ -1,4 +1,21 @@
-from modules.baseclass.BaseClass import BaseClass
+"""
+Task Module
+
+This module defines the `Task` class, which represents a task entity in the system. 
+The `Task` class inherits from the `BaseClass` and provides methods for basic 
+CRUD (Create, Read, Update, Delete) operations. Each task has attributes such as 
+an ID, name, description, status, and due date.
+
+Classes:
+    Task: A class representing a task with CRUD operations.
+
+Usage Example:
+    task = Task(task_id=1, name="Sample Task", description="This is a sample task.",
+                status="Pending", due_date="2023-12-31")
+    task.create()
+"""
+
+from modules.baseclass import BaseClass
 
 class Task(BaseClass):
     """
